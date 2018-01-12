@@ -10,3 +10,7 @@ h1 {
 	margin: auto;
 	text-align: right;
 }
+
+.row {
+	display: none;
+}
