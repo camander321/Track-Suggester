@@ -43,6 +43,10 @@ body {
 	display: none;
 }
 
+.panel-heading {
+	text-align: center;
+}
+
 #submit {
 	margin:auto;
 	width: 200px;
