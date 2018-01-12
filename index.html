@@ -6,9 +6,83 @@
     <script type="text/javascript" src="js/jquery-3.2.1.js"></script>
     <script type="text/javascript" src="js/scripts.js"></script>
     <meta charset="utf-8">
-    <title></title>
+    <title>Track Suggester</title>
   </head>
   <body>
+  
+    <div class="container">
+      <h1>Which Epicodus Track is Right for Me</h1>
+      
+      <div id="questions">
+        <form id="form1">
+        
+          <div class="radio form-control" id="q1">
+            <div class="col-md-5 question">
+              <label>Pick One</label>
+            </div>
+            
+            <div class="col-md-7 answer">
+              <label>
+                <input type="radio" name="q1" value="a" checked>
+                Strongly Disagree
+              </label>
+              <label>
+                <input type="radio" name="q1" value="b">
+                Disagree
+              </label>
+              <label>
+                <input type="radio" name="q1" value="c">
+                Neutral
+              </label>
+              <label>
+                <input type="radio" name="q1" value="d">
+                Agree
+              </label>
+              <label>
+                <input type="radio" name="q1" value="e">
+                Strongly Agree
+              </label>
+            </div>
+          </div>
+          
+          <div class="radio form-control" id="q2">
+            <div class="col-md-5 question">
+              <label>Pick One</label>
+            </div>
+            
+            <div class="col-md-7 answer">
+              <label>
+                <input type="radio" name="q2" value="a" checked>
+                Strongly Disagree
+              </label>
+              <label>
+                <input type="radio" name="q2" value="b">
+                Disagree
+              </label>
+              <label>
+                <input type="radio" name="q2" value="c">
+                Neutral
+              </label>
+              <label>
+                <input type="radio" name="q2" value="d">
+                Agree
+              </label>
+              <label>
+                <input type="radio" name="q2" value="e">
+                Strongly Agree
+              </label>
+            </div>
+          </div>
+          
+          <button type="submit" class="form-control">Submit</button>
+        </form>
+      </div>
+      
+      <div id="answers">
+      
+      </div>
+      
+    </div>
 
   </body>
 </html>
