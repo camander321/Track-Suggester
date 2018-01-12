@@ -1,6 +1,6 @@
 $(document).ready(function() {
 	
-	//ruby, php, java, css, c#
+	//[ruby, php, java, css, c#]
 	var scores = [0,0,0,0,0];
 	var question = 0;
 	
@@ -63,11 +63,10 @@ $(document).ready(function() {
 			$("button").text("Begin Quiz!");
 		} 
 		else {
+			addScore(parseInt($("input:radio[name=q" + question + "]:checked").val()));
 			nextQuestion();
 			if (question === $(".question").length - 1)
 				$("button").text("Get Results!");
-			
-			addScore(parseInt($("input:radio[name=q" + question + "]:checked").val()));
 		}
 		
 		question++;
