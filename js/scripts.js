@@ -29,7 +29,6 @@ $(document).ready(function() {
 				winner = i;
 			}
 		}
-		console.log(getNameFromIndex(winner));
 		return getNameFromIndex(winner);
 	}
 
@@ -54,11 +53,13 @@ $(document).ready(function() {
 			$(".question").hide();
 			$("button").text("Restart");
 			
-			getWinner();
+			console.log(".result-" + getWinner());
+			$("#result-" + getWinner()).fadeIn();
 		} 
 		else if (question === $(".question").length + 1) { // RESET QUIZ
 			question = -1;
 			scores = [0,0,0,0,0];
+			$(".panel").hide();
 			$("button").text("Begin Quiz!");
 		} 
 		else {

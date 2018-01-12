@@ -11,6 +11,10 @@ h1 {
 	text-align: right;
 }
 
-.row {
+.question {
+	display: none;
+}
+
+.panel {
 	display: none;
 }
