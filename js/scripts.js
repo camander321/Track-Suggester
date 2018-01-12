@@ -19,7 +19,6 @@ $(document).ready(function() {
 	}
 	
 	function getWinner() {
-		console.log(scores);
 		var winner = 0;
 		
 		for (i = 1; i < scores.length; i++) { 
@@ -53,7 +52,6 @@ $(document).ready(function() {
 			$(".question").hide();
 			$("button").text("Restart");
 			
-			console.log(".result-" + getWinner());
 			$("#result-" + getWinner()).fadeIn();
 		} 
 		else if (question === $(".question").length + 1) { // RESET QUIZ
